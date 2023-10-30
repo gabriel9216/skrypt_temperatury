@@ -24,3 +24,4 @@ function fahrenheit()
 			result.innerHTML=number+" fehrenheity to "+fahrenheit+" stopieni celcjusza";
 	}
 }
+
