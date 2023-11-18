@@ -1,0 +1,29 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: aqua;
+}
+h1{
+    font-size: 150%;
+    color: black;
+    text-align: center;
+}
+button{
+    background-color: blue;
+    color: white;
+}
+button:hover{
+    background-color: greenyellow;
+    color: black;
+    font-size: 110%;
+}
+.result{
+    text-align: center; 
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.button{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

@@ -4,15 +4,18 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Przelicznik temperatur</title>
+	<link rel="stylesheet" href="styl.css">
 </head>
 <body>
 	<h1>strona przeliczająca temperatury</h1>
-	<hr>
+	<hr color="blue">
 	<input type="text" id="number" placeholder="podaj temperature">
-	<h2>wybierz na jaka jednostke chcesz ja przeliczyc</h2>
+	<h2>Wybierz na jaka jednostkę chcesz przeliczyc temperature</h2>
+	<div class="button">
 	<button onclick="celcjusz()">przelicz na celcjusze</button>
 	<button onclick="fahrenheit()">przelicz na fahrenheity</button>
-	<div id="result" ></div>
+	</div>
+	<div id="result" class="result"></div>
 	<script src="script.js"></script>
 </body>
 </html>
