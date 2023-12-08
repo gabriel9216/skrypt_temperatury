@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,33 +8,11 @@
 <body>
 	<h1>strona przeliczająca temperatury</h1>
 	<hr>
-	<input type="number" id="number" placeholder="podaj temperature">
+	<input type="text" id="number" placeholder="podaj temperature">
 	<h2>wybierz na jaka jednostke chcesz ja przeliczyc</h2>
-	<button onclick="celc()">przelicz na celcjusze</button>
-	<button onclick="fahr()">przelicz na fahrenheity</button>
-	<div id="temp" ></div>
-
-	<script>
-		function celc()
-		{
-			let number=document.getElementById('number').value;
-			let cel=number*1.8+32;
-			let wynik=document.getElementById('temp');
-			if(number==1){
-				wynik.innerHTML=number+" stopień celcjusza to "+Math.round(cel)+" fehrenheitów";
-			} else
-				wynik.innerHTML=number+" stopnie celcjusza to "+Math.round(cel)+" fehrenheitów";
-		}
-		function fahr()
-		{
-			let number=document.getElementById('number').value;
-			let fah=(number-32)/1.8;
-			let wynik=document.getElementById('temp');
-			if(number==34 || number==33){
-				wynik.innerHTML=number+" fehrenheity to "+Math.round(fah)+" stopień celcjusza";
-			} else
-				wynik.innerHTML=number+" fehrenheitów to "+Math.round(fah)+" stopni celjusza";
-		}
-	</script>
+	<button onclick="celcjusz()">przelicz na celcjusze</button>
+	<button onclick="fahrenheit()">przelicz na fahrenheity</button>
+	<div id="result" ></div>
+	<script src="script.js" async></script>
 </body>
 </html>
