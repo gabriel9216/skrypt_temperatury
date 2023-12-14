@@ -1,4 +1,4 @@
-function check(number) {
+function checkIsNumber(number) {
     if(number=== "" || typeof number !== "number") {
         alert("Prosze wpisać wartość liczbowa");
         return false;
