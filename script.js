@@ -17,7 +17,7 @@ function celcjusz()
 }
 function fahrenheit()
 {
-	let number=document.getElementById('number').value;
+	let number= getInputValue()
 	let fahrenheit=(number-'32')/'1.8';
 	let result=document.getElementById('result');
 	if(check(number)){
