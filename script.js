@@ -1,5 +1,5 @@
 function check(number) {
-    if(number=== "" || isNaN(number)) {
+    if(number=== "" || typeof number !== "number") {
         alert("Prosze wpisać wartość liczbowa");
         return false;
     } else
