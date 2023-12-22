@@ -19,7 +19,7 @@ function fahrenheit()
 {
 	let number= getInputValue()
 	let fahrenheit=(number-32)/1.8;
-	let result=document.getElementById('result');
+	let result=getResult();
 	if(check(number)){
 			result.innerHTML=number+" fehrenheity to "+fahrenheit+" stopieni celcjusza";
 	}
